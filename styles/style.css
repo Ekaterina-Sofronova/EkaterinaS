@@ -1,0 +1,16 @@
+.header{
+    background-color: rgb(75, 80, 87);
+    color: rgb(240, 248, 255);
+}
+.footer{
+    background-color: rgb(160, 250, 250);
+}
+@font-face {
+font-family: "Kurale ";
+src: url("../fonts/Kurale-Regular.ttf") format("ttf");
+font-weight: normal;
+}
+
+body{
+    font-family: "Kurale ";
+}
