@@ -8,45 +8,74 @@
 </head>
 <body>
    <header class="header">
-    <h1>Платформа для трейдеров и инвесторов</h1>
-    <nav>
-        <ul>
-            <li><a href="#">Информационный модуль</a> </li>
-            <li><a href="#">Аналитический модуль</a> </li>
-            <li><a href="#">Модуль  управления портфелем</a> </li>
-            <li><a href="#">Обучающий модуль</a> </li>
-            <li><a href="#">Модуль  общения</a> </li>
+    <h1 class="header__title"> InvestSimple</h1>
+    <h4 class="header__title">Платформа для трейдеров и инвесторов</h4>
+    <nav class="header__menu">
+        <ul class="menu">         
+            <li class="menu__item">
+                <a class="menu__link" href="#">Информационный модуль</a>
+             </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#">Аналитический модуль</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#">Модуль  управления портфелем</a> 
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#">Обучающий модуль</a>
+             </li>
+            <li class="menu__item">
+                <a class="menu__link" href="#">Модуль  общения</a>
+             </li>
         </ul>
     </nav>
-    <a href="#">Вход</a>
-    <button> Вход </button>
-    <button> Регистрация </button>
-    <a href="#">Регистрация</a>
+    <a class="header__button" href="#">Вход</a>
+    <a class="header__button" href="#">Регистрация</a>
     <form action="/submit" method="post">
-        <br><input type="text" name="username" placeholder="Имя пользователя"> <br>
-        <input type="text" name="username" placeholder="Пароль">
+        <br><input type="text" name="username" placeholder="Введите ваше имя">
+        <br><input type="password" name="password" placeholder="Введите пароль">
         <input type="submit" value="Войти">
-
         </form>
         
    </header>
-   <main>
-       <div>
-        <h2>О нас</h2>
+   <main class="main">
+    <section class="about">
+       <div class="about__item">
+        <h2 class="about__titel">О нас</h2>
         <p>Мы — платформа для трейдеров и инвесторов, предоставляющая доступ к аналитике рынка, удобное управление активами, образовательные ресурсы и возможности для общения с единомышленниками. Наша цель — помочь вам достичь финансового успеха на фондовом рынке.</p>
-        <img src="images/картинка инвест.webp" alt="" width="600">
-        <p><a href="#">Записаться на консультацию</a></p>
+        <img class="about__image" src="images/новая заставкпа.webp" alt="" width="1505" height="350">
+       <p><a href="#">Записаться на консультацию</a></p>
        </div>
+    </section>
        <div>
-        <h2>Специалисты </h2>
+        <h2>Наши специалисты </h2>
        </div>
-       <div>
-        <img src="images/кот.jpg" alt=""width="300" height="200">
-        <p> Разработчик платформы </p>
-        <p> Обеспечиваю беспербойную работу платформы.Обращайтесь по любым вопросам, связанным с функциональностью сайта!</p>
-        <img src="images/кот2.jpg" alt=""width="300" height="200">
-        <p> Трейдер-коуч </p>
-        <p> Провожу бесплатные консультации в эфире нашего телеграм-канала<a href="#">@InvestSimple</a>  каждое воскресение.</p>
+        <div>
+            <label for="username">Начните вводить специалиста:</label>
+            <input type="text" id="username" name="username">
+        </div>
+        <div>
+            <img src="images/фин ана.png" alt=""width="300" height="200">
+           <p>Сергеев Сергей Сергеевич. Финансовый аналитик</p>
+            <p>Предоставляет объективные аналитические материалы по рынку, помогает принять инвестиционные решения, исходя из фундаментального анализа.</p>
+        <img class="about__image" src="images/упр пор.jpg" alt=""width="300"height="200">
+        <p class="specialists">Егоров Егор Егорович. Управляющий портфелем</p>
+        <p class="specialist__functions">Разрабатывает и реализует инвестиционные стратегии для клиентов, обеспечивает управление рисками и максимизацию доходности.</p>
+        <img class="about__image" src="images/Налоговый консульт.jpg" alt=""width="300" height="200">
+        <p class="specialists">Антонов Антон Антонович. Налоговый консультант</p>
+        <p class="specialist__functions">Предоставляет консультации по налогообложению инвестиций и помогает минимизировать налоговые издержки.</p>
+        <img class="about__image" src="images/трейдер.jpg" alt=""width="300" height="200">
+        <p class="specialists">Васильев Василий Васильевич. Ведущий трейдер</p>
+        <p class="specialist__functions">Делится опытом и стратегиями торговли, проводит вебинары и дает рекомендации по торговым сигналам.</p>
+        <img class="about__image" src="images/Рискт.jpg" alt=""width="300" height="200">
+        <p class="specialists">Евгеньева Евгения Евгеньевна. Специалист по управлению рисками</p>
+        <p class="specialist__functions">Помогает клиентам определять и управлять рисками при торговле на рынке.</p>
+        <img class="about__image" src="images/учитель.png" alt=""width="300" height="200">
+        <p class="specialists">Александрова Александра Александрова. Специалист по образованию</p>
+        <p class="specialist__functions">Предлагает обучающие материалы и проводит вебинары по трейдингу и инвестированиюв в эфире нашего телеграм-канала<a href="#">@InvestSimple</a>.</p>
+        <img sclass="about__image" src="images/hfphf,jnxbr.webp" alt=""width="300" height="200">
+        <p class="specialists"> Градов Александр Андреевич, Софронова Екатерина Андреевна. Разработчики платформы </p>
+        <p class="specialist__functions"> Обеспечивают беспербойную работу платформы. Обращайтесь по любым вопросам, связанным с функциональностью сайта!</p>
         <p></p>
        </div>
    </main>
