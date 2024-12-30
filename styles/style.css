@@ -1,16 +1,12 @@
-.header{
-    background-color: rgb(20, 26, 42);
-    color: rgb(240, 248, 255);
-}
-.footer{
-    background-color: rgb(160, 250, 250);
-}
-@font-face {
-font-family: "Kurale ";
-src: url("../fonts/Kurale-Regular.ttf") format("ttf");
-font-weight: normal;
-}
-
-body{
-    font-family: "Kurale ";
-}
+/* Подключение шрифтов */
+@import "fonts.css";
+/* Подключение основных стилей */
+@import "base.css";
+/* Подключение стилей относящихся к header */
+@import "header.css";
+/* Подключение стилей относящихся к footer */
+@import "footer.css";
+/* Подключение стилей относящихся к main */
+@import "main.css";
+/*Подключение стилей относящихся к typography.css */
+@import "typography.css"

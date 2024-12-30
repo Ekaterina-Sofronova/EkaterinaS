@@ -1,0 +1,38 @@
+.about__title {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 1px;
+}
+.about__text {
+    display: flex;
+    justify-content: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.about__image {
+    width: 100%;
+    height: 350px;
+}
+.specialist__title {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 1px;
+}
+.specialist__image {
+    width: 20%;
+    height: 250px
+}
+.specialist__name {
+    display: flex;
+    justify-content: left;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.specialist__functions {
+    display: flex;
+    justify-content: left;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
