@@ -1,28 +1,55 @@
 .header {
     background-color: rgb(25, 23, 33);
     color: rgb(249, 248, 251);
-}
-.header__title {
+    }
+    .header__title {
     width: 100%;
     flex-shrink: 0;
-}
-.header__button {
+    }
+    .header__button {
     background-color: rgb(25, 23, 33);
     color: rgb(13, 232, 239);
-}
-.header__menu {
+    transition: background-color 0.3s ease, color 0.3s ease; 
+    }
+    .header__button:hover {
+    background-color: rgb(35, 33, 43); 
+    color: rgb(18, 255, 255); 
+    cursor: pointer; 
+    }
+    .header__button:focus {
+    outline: none; 
+    box-shadow: 0 0 0 2px rgba(13, 232, 239, 0.5); 
+    }
+    .header__button:active {
+    background-color: rgb(15, 13, 23); 
+    color: rgb(255, 255, 255); 
+    }
+    .header__menu {
     display: flex;
     justify-content: left;
     width: 100%;
     flex-shrink: 0;
-}
-.header__subtitle {
+    }
+    .header__subtitle {
     width: 100%;
     flex-shrink: 0;
-}
-.menu__link {
+    }
+    .menu__link {
     display: flex;
     justify-content: left;
     padding-top: 1px;
     padding-bottom: 1px;
-}
+    text-decoration: none; 
+    color: rgb(249, 248, 251); 
+    transition: color 0.3s ease; 
+    }
+    .menu__link:hover {
+    color: rgb(13, 232, 239); 
+    }
+    .menu__link:focus {
+    outline: none; 
+    text-decoration: underline; 
+    }
+    .menu__link:active {
+    color: rgb(18, 170, 170); 
+    }

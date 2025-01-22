@@ -36,3 +36,13 @@
     padding-top: 1px;
     padding-bottom: 1px;
 }
+.about__link:hover {
+    color: rgb(13, 232, 239); 
+    }
+    .about__link:focus {
+    outline: none; 
+    text-decoration: underline; 
+    }
+    .about__link:active {
+    color: rgb(18, 170, 170); 
+    }
