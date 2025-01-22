@@ -11,8 +11,25 @@
 
 <body>
     <header class="header container">
-        <h1 class="header__title"> InvestSimple</h1>
-        <h2 class="header__subtitle">Платформа для трейдеров и инвесторов</h2>
+       <a class="header__logo-wrap" href="index.html">
+            <img class="header__logo-wrap" src="images/logo.webp"alt="Логотип" width="50">
+            <h1 class="header__title">InvestSimple</h1>
+        </a>
+
+        <div class="header__buttons">
+            <a class="header__login" href="#">Вход</a>
+            <a class="header__login" href="#">Регистрация</a>
+            </div>
+            <nav class="header__menu">
+                <ul class="menu">
+                <li class="menu__item"> 
+                    <a class="menu__link" href="#">О нас</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Специалисты</a>
+                </li>
+            </ul>
+            </nav>
         <nav class="header__menu">
             <ul class="menu">
                 <li class="menu__item">
@@ -32,8 +49,7 @@
                 </li>
             </ul>
         </nav>
-        <a class="header__button button" href="#">Вход</a>
-        <a class="header__button button" href="#">Регистрация</a>
+    
         <form class="form" action="/submit" method="post">
             <br><input class="form__input" type="text" name="username" placeholder="Введите ваше имя">
             <br><input class="form__input" type="password" name="password" placeholder="Введите пароль">
@@ -44,14 +60,16 @@
     <main class="main container">
 
         <section class="about">
-
+            <div class="about__wrap-left">
             <h2 class="about__title">О нас</h2>
-            <p class="about__text">Мы — платформа для трейдеров и инвесторов, предоставляющая доступ к аналитике рынка,
-                удобное
-                управление активами, образовательные ресурсы и возможности для общения с единомышленниками. Наша
+            <p> Мы — платформа для трейдеров и инвесторов, предоставляющая доступ к аналитике рынка,
+                удобное управление активами, образовательные ресурсы и возможности для общения с единомышленниками. Наша
                 цель — помочь вам достичь финансового успеха на фондовом рынке.</p>
-            <img class="about__image" src="images/home.webp" alt="заставка сайта" width="1890" height="350">
-            <a class="about__link" href="#">Записаться на консультацию</a>
+            <a class="about__button" href="#">Записаться на консультацию</a>
+            </div>
+            <div class="about__wrap-right">
+                <img class="about__image" src="images/home.webp" alt="График с цифрами" width="750" height="175">
+            </div>
         </section>
 
         <section class="specialist">
@@ -62,59 +80,71 @@
             </div>
 
             <ul class="specialist__list">
-                <li class="specialist__item">
+                <li class="specialist__card">
                     <img class="specialist__image" src="images/analyst.png" alt="фото аналитика" width="300"
                         height="200">
-                    <p class="specialist__name"> Сергеев Сергей Сергеевич. Финансовый аналитик</p>
-                    <p class="specialist__functions">Предоставляет объективные аналитические материалы по рынку,
+                    <p class="specialist__name"> Сергеев Сергей Сергеевич</p>
+                    <p class="specialist__job"> Финансовый аналитик</p>
+                    <p class="specialist__desc">Предоставляет объективные аналитические материалы по рынку,
                         помогает принять инвестиционные
                         решения, исходя из фундаментального анализа.</p>
+                        <a class="specialists__link" href="#">Записаться на консультацию</a>
                 </li>
-                <li class="specialist__item">
+                <li class="specialist__card">
                     <img class="specialist__image" src="images/portfoliomanager.jpg" alt="фото управляющего портфелем"
                         width="300" height="200">
-                    <p class="specialist__name">Егоров Егор Егорович. Управляющий портфелем</p>
-                    <p class="specialist__functions">Разрабатывает и реализует инвестиционные стратегии для
+                    <p class="specialist__name">Егоров Егор Егорович</p>
+                    <p class="specialist__job"> Управляющий портфелем</p>
+                    <p class="specialist__desc">Разрабатывает и реализует инвестиционные стратегии для
                         клиентов,
                         обеспечивает управление рисками и максимизацию доходности.</p>
+                        <a class="specialists__link" href="#">Записаться на консультацию</a>
                 </li>
-                <li class="specialist__item">
+                <li class="specialist__card">
                     <img class="specialist__image" src="images/consultant.jpg" alt="фото консультанта" width="300"
                         height="200">
-                    <p class="specialist__name">Антонов Антон Антонович. Налоговый консультант</p>
-                    <p class="specialist__functions">Предоставляет консультации по налогообложению инвестиций и помогает
+                    <p class="specialist__name">Антонов Антон Антонович</p>
+                    <p class="specialist__job"> Налоговый консультант</p>
+                    <p class="specialist__desc">Предоставляет консультации по налогообложению инвестиций и помогает
                         минимизировать налоговые издержки.</p>
+                        <a class="specialists__link" href="#">Записаться на консультацию</a>
                 </li>
-                <li class="specialist__item">
+                <li class="specialist__card">
                     <img class="specialist__image" src="images/trader.jpg" alt="фото трейдера" width="300" height="200">
-                    <p class="specialist__name">Васильев Василий Васильевич. Ведущий трейдер</p>
-                    <p class="specialist__functions">Делится опытом и стратегиями торговли, проводит вебинары и дает
+                    <p class="specialist__name">Васильев Василий Васильевич</p>
+                    <p class="specialist__job"> Ведущий трейдер</p>
+                    <p class="specialist__desc">Делится опытом и стратегиями торговли, проводит вебинары и дает
                         рекомендации по торговым сигналам.</p>
+                        <a class="specialists__link" href="#">Записаться на консультацию</a>
                 </li>
-                <li class="specialist__item">
+                <li class="specialist__card">
                     <img class="specialist__image" src="images/risks.jpg" alt="фото управляющего рисками" width="300"
                         height="200">
-                    <p class="specialist__name">Евгеньева Евгения Евгеньевна. Специалист по управлению рисками</p>
-                    <p class="specialist__functions">Помогает клиентам определять и управлять рисками при торговле на
+                    <p class="specialist__name">Евгеньева Евгения Евгеньевна</p>
+                    <p class="specialist__job"> Специалист по управлению рисками</p>
+                    <p class="specialist__desc">Помогает клиентам определять и управлять рисками при торговле на
                         рынке.
+                        <a class="specialists__link" href="#">Записаться на консультацию</a>
                     </p>
                 </li>
-                <li class="specialist__item">
+                <li class="specialist__card">
                     <img class="specialist__image" src="images/teacher.png" alt="фото специалиста по образованию"
                         width="300" height="200">
-                    <p class="specialist__name">Александрова Александра Александрова. Специалист по образованию</p>
-                    <p class="specialist__functions">Предлагает обучающие материалы и проводит вебинары по трейдингу и
-                        инвестированиюв в эфире нашего телеграм-канала<a href="#"> @InvestSimple</a>.</p>
+                    <p class="specialist__name">Александрова Александра Александрова</p>
+                    <p class="specialist__job"> Специалист по образованию</p>
+                    <p class="specialist__desc">Предлагает обучающие материалы и проводит вебинары по трейдингу и
+                        инвестированию в в эфире нашего телеграм-канала<a href="#"> @InvestSimple</a>.</p>
+                        <a class="specialists__link" href="#">Записаться на консультацию</a>
                 </li>
-                <li class="specialist__item">
+                <li class="specialist__card">
                     <img class="specialist__image" src="images/developer.webp" alt="фото разработчиков" width="300"
                         height="200">
-                    <p class="specialist__name"> Градов Александр Андреевич, Софронова Екатерина Андреевна. Разработчики
-                        платформы
+                    <p class="specialist__name"> Градов Александр Андреевич, Софронова Екатерина Андреевна</p>
+                    <p class="specialist__job"> Разработчики платформы</p>
                     </p>
-                    <p class="specialist__functions"> Обеспечивают беспербойную работу платформы. Обращайтесь по любым
-                        вопросам,
-                        связанным с функциональностью сайта!</p>
+                    <p class="specialist__desc"> Обеспечивают бесперебойную работу платформы. Обращайтесь по любым
+                        вопросам, связанным с функциональностью сайта!</p>
+                        <a class="specialists__link" href="#">Записаться на консультацию</a>
                 </li>
             </ul>
         </section>
