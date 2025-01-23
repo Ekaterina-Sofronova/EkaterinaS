@@ -21,7 +21,7 @@
     padding-bottom: 1px;
 }
 .specialist__image {
-    width: 20%;
+    width: 100%;
     height: 250px
 }
 .specialist__name {
@@ -31,8 +31,6 @@
     padding-bottom: 1px;
 }
 .specialist__desc {
-    display: flex;
-    justify-content: left;
     padding-top: 1px;
     padding-bottom: 1px;
 }
@@ -72,31 +70,31 @@
             display: flex;
             flex-direction: column;
            }
-           .specialists__card{
+           .specialist__card{
             width: 350px;
             padding: 15px;
             background-color: aliceblue;
            color: black;
             box-shadow: 1px 2px 20px 5px #d7d7d7;
            }     
-           .specialists__name{
+           .specialist__name{
             margin-top: 15px;
             margin-bottom: 15px;
             font-size: 20px;
             font-weight: bold;
             text-align: center;
            }
-           .specialists__job{
+           .specialist__job{
             margin-top: 0;
             margin-bottom: 15px;
             font-size: 14px;
             font-style: italic;
            }
-           .specialists__desc{
+           .specialist__desc{
             margin-top: 0;
             margin-bottom: 15px;
            }
-           .specialists__link{
+           .specialist__link{
             display: block;
             padding: 10px;
             background-color: rgb(62, 120, 167);
@@ -104,22 +102,22 @@
             text-decoration: none;
             text-align: center;
            }
-           .specialists__list {
+           .specialist__list {
             margin: 0;
             padding: 20px 0;
             display: flex;
             gap: 20px;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             list-style-type: none;
            }
-           .specialists__card{
+           .specialist__card{
             display: flex;
             flex-direction: column;
            }
-           .specialists__link{
+           .specialist__link{
             margin-top: auto;
            }
-           .specialists__image{
+           .specialist__image{
             width: 100%;
             height: 300px;
             object-fit: cover;

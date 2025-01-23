@@ -50,11 +50,7 @@
             </ul>
         </nav>
     
-        <form class="form" action="/submit" method="post">
-            <br><input class="form__input" type="text" name="username" placeholder="Введите ваше имя">
-            <br><input class="form__input" type="password" name="password" placeholder="Введите пароль">
-            <input class="form__button" type="submit" value="Войти">
-        </form>
+      
 
     </header>
     <main class="main container">
@@ -88,7 +84,7 @@
                     <p class="specialist__desc">Предоставляет объективные аналитические материалы по рынку,
                         помогает принять инвестиционные
                         решения, исходя из фундаментального анализа.</p>
-                        <a class="specialists__link" href="#">Записаться на консультацию</a>
+                        <a class="specialist__link" href="#">Записаться на консультацию</a>
                 </li>
                 <li class="specialist__card">
                     <img class="specialist__image" src="images/portfoliomanager.jpg" alt="фото управляющего портфелем"
@@ -98,7 +94,7 @@
                     <p class="specialist__desc">Разрабатывает и реализует инвестиционные стратегии для
                         клиентов,
                         обеспечивает управление рисками и максимизацию доходности.</p>
-                        <a class="specialists__link" href="#">Записаться на консультацию</a>
+                        <a class="specialist__link" href="#">Записаться на консультацию</a>
                 </li>
                 <li class="specialist__card">
                     <img class="specialist__image" src="images/consultant.jpg" alt="фото консультанта" width="300"
@@ -107,7 +103,7 @@
                     <p class="specialist__job"> Налоговый консультант</p>
                     <p class="specialist__desc">Предоставляет консультации по налогообложению инвестиций и помогает
                         минимизировать налоговые издержки.</p>
-                        <a class="specialists__link" href="#">Записаться на консультацию</a>
+                        <a class="specialist__link" href="#">Записаться на консультацию</a>
                 </li>
                 <li class="specialist__card">
                     <img class="specialist__image" src="images/trader.jpg" alt="фото трейдера" width="300" height="200">
@@ -115,7 +111,7 @@
                     <p class="specialist__job"> Ведущий трейдер</p>
                     <p class="specialist__desc">Делится опытом и стратегиями торговли, проводит вебинары и дает
                         рекомендации по торговым сигналам.</p>
-                        <a class="specialists__link" href="#">Записаться на консультацию</a>
+                        <a class="specialist__link" href="#">Записаться на консультацию</a>
                 </li>
                 <li class="specialist__card">
                     <img class="specialist__image" src="images/risks.jpg" alt="фото управляющего рисками" width="300"
@@ -123,9 +119,8 @@
                     <p class="specialist__name">Евгеньева Евгения Евгеньевна</p>
                     <p class="specialist__job"> Специалист по управлению рисками</p>
                     <p class="specialist__desc">Помогает клиентам определять и управлять рисками при торговле на
-                        рынке.
-                        <a class="specialists__link" href="#">Записаться на консультацию</a>
-                    </p>
+                        рынке.</p>
+                        <a class="specialist__link" href="#">Записаться на консультацию</a>
                 </li>
                 <li class="specialist__card">
                     <img class="specialist__image" src="images/teacher.png" alt="фото специалиста по образованию"
@@ -134,7 +129,7 @@
                     <p class="specialist__job"> Специалист по образованию</p>
                     <p class="specialist__desc">Предлагает обучающие материалы и проводит вебинары по трейдингу и
                         инвестированию в в эфире нашего телеграм-канала<a href="#"> @InvestSimple</a>.</p>
-                        <a class="specialists__link" href="#">Записаться на консультацию</a>
+                        <a class="specialist__link" href="#">Записаться на консультацию</a>
                 </li>
                 <li class="specialist__card">
                     <img class="specialist__image" src="images/developer.webp" alt="фото разработчиков" width="300"
@@ -144,8 +139,8 @@
                     </p>
                     <p class="specialist__desc"> Обеспечивают бесперебойную работу платформы. Обращайтесь по любым
                         вопросам, связанным с функциональностью сайта!</p>
-                        <a class="specialists__link" href="#">Записаться на консультацию</a>
-                </li>
+                        <a class="specialist__link" href="#">Записаться на консультацию</a>
+                    </li>
             </ul>
         </section>
         <section class="schedule">
@@ -156,13 +151,15 @@
     <footer class="footer container">
         <ul class="footer__list">
             <li class="footer__item">
-                <a class="footer__link" href="#">ВК</a>
+                <a class="footer__link" href="#"><img class="footer__button link" src="images/vk1.png" alt="Иконка вк"width="25" height="25"></a>
+                
             </li>
             <li class="footer__item">
-                <a class="footer__link" href="#">телеграм</a>
+                <a class="footer__link" href="#"><img class="footer__button link" src="images/tg1.png" alt="Иконка ссылки"width="25" height="25"></a>
             </li>
             <li class="footer__item">
-                <a class="footer__link" href="#">hh</a>
+                <a class="footer__link" href="#"> <img class="footer__button link" src="images/hh.png" alt="Иконка ссылки"width="25" height="25"></a>
+               
             </li>
         </ul>
         <section class="footer__section">
@@ -171,6 +168,11 @@
             <p class="footer__copyright">© 2024 Все права защищены.</p>
         </section>
     </footer>
+    <form class="form" action="/submit" method="post">
+        <br><input class="form__input" type="text" name="username" placeholder="Введите ваше имя">
+        <br><input class="form__input" type="password" name="password" placeholder="Введите пароль">
+        <input class="form__button" type="submit" value="Войти">
+    </form>
 </body>
 
 </html>
