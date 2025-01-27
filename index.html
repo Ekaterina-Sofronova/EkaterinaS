@@ -169,6 +169,27 @@
         </section>
     </footer>
     <form class="form" action="/submit" method="post">
+        <h2 class="form__title" >Регистрация</h2>
+        <p class="form__desk">Введите ваши данные</p>
+        <div class="form__item">
+            <label class="form__lable">Фамилия</label>
+            <input class="form__input" type="text" name="name" placeholder="Введите фамилию" required>
+        </div>
+        <div class="form__item">
+            <label class="form__lable">Имя</label>
+            <input class="form__input" type="text" name="surname" placeholder="Введите имя" required>
+        </div>
+        <div class="form__item">
+            <label class="form__lable">Почта</label>
+            <input class="form__input" type="email" name="email" placeholder="Введите почту" required>
+        </div>
+        <div class="form__item">
+            <label class="form__lable">Номер телефона</label>
+            <input class="form__input" type="tel" name="phone" placeholder="Введите номер телефона" required>
+        </div>
+        <button class="form__button">Зарегистрироваться</button>
+    </form>
+        <h2 class="form__title" >Вход</h2>
         <br><input class="form__input" type="text" name="username" placeholder="Введите ваше имя">
         <br><input class="form__input" type="password" name="password" placeholder="Введите пароль">
         <input class="form__button" type="submit" value="Войти">
