@@ -9,4 +9,6 @@
 /* Подключение стилей относящихся к main */
 @import "main.css";
 /*Подключение стилей относящихся к typography.css */
-@import "typography.css"
+@import "typography.css";
+/* Подключение стилей относящихся к media */
+@import "media.css";
