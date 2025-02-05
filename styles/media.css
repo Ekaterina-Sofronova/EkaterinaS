@@ -1,9 +1,23 @@
-@media only screen and (max-width: 600px) {
-body {
-background-color: lightblue;
-}
-.container {
-flex-direction: column;
-max-width: 100%;
-}
-}
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: lightblue;
+    }
+
+    .container {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .about {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+        width: 100%;
+
+
+    }
+    
+    .about__wrap-right {
+        width: 100%;
+    }
+    }

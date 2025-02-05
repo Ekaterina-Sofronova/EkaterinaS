@@ -4,124 +4,150 @@
     padding-top: 10px;
     padding-bottom: 1px;
 }
+
 .about__text {
     display: flex;
     justify-content: center;
     padding-top: 1px;
     padding-bottom: 1px;
 }
+
 .about__image {
     width: 100%;
     height: 350px;
+    flex-direction: column
 }
+
 .specialist__title {
     display: flex;
     justify-content: center;
     padding-top: 10px;
     padding-bottom: 1px;
 }
+
 .specialist__image {
     width: 100%;
     height: 250px
 }
+
 .specialist__name {
     display: flex;
     justify-content: left;
     padding-top: 1px;
     padding-bottom: 1px;
 }
+
 .specialist__desc {
     padding-top: 1px;
     padding-bottom: 1px;
 }
+
 .about__link:hover {
-    color: rgb(13, 232, 239); 
-    }
-    .about__link:focus {
-    outline: none; 
-    text-decoration: underline; 
-    }
-    .about__link:active {
-    color: rgb(18, 170, 170); 
-    }
-    .about{
-        display: flex;
-        gap: 10px;
-       }
-       .about__wrap-right{
-        width: 500px;
-        flex-shrink: 0;
-       }
-       .about{
-        background-color: rgb(90, 157, 211);
-         color: rgb(255, 255, 255);
-         padding: 10px;
-        }
-        .about__button{
-            display: block;
-            padding: 10px;
-            color: rgb(62, 120, 167);
-            background-color: rgb(255, 255, 255);
-            text-decoration: none;
-            margin-top: auto;
-            margin-right: auto;
-           }
-           .about__wrap-left{
-            display: flex;
-            flex-direction: column;
-           }
-           .specialist__card{
-            width: 340px;
-            padding: 15px;
-            background-color: aliceblue;
-           color: black;
-            box-shadow: 1px 2px 20px 5px #d7d7d7;
-           }     
-           .specialist__name{
-            margin-top: 15px;
-            margin-bottom: 15px;
-            font-size: 20px;
-            font-weight: bold;
-            text-align: center;
-           }
-           .specialist__job{
-            margin-top: 0;
-            margin-bottom: 15px;
-            font-size: 14px;
-            font-style: italic;
-           }
-           .specialist__desc{
-            margin-top: 0;
-            margin-bottom: 15px;
-           }
-           .specialist__link{
-            display: block;
-            padding: 10px;
-            background-color: rgb(62, 120, 167);
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-            text-align: center;
-           }
-           .specialist__list {
-            margin: 0;
-            padding: 20px 0;
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-            list-style-type: none;
-            width: 400;
-            
-           }
-           .specialist__card{
-            display: flex;
-            flex-direction: column;
-          
-           }
-           .specialist__link{
-            margin-top: auto;
-           }
-           .specialist__image{
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-           }
+    color: rgb(13, 232, 239);
+}
+
+.about__link:focus {
+    outline: none;
+    text-decoration: underline;
+}
+
+.about__link:active {
+    color: rgb(18, 170, 170);
+}
+
+.about {
+    display: flex;
+    gap: 10px;
+  
+}
+
+.about__wrap-right {
+    width: 500px;
+    flex-shrink: 0;
+}
+
+.about {
+    background-color: rgb(90, 157, 211);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.about__button {
+    display: block;
+    padding: 10px;
+    color: rgb(62, 120, 167);
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-top: auto;
+    margin-right: auto;
+}
+
+.about__wrap-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.specialist__card {
+    width: 340px;
+    padding: 15px;
+    background-color: aliceblue;
+    color: black;
+    box-shadow: 1px 2px 20px 5px #d7d7d7;
+
+}
+
+.specialist__name {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.specialist__job {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.specialist__desc {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.specialist__link {
+    display: block;
+    padding: 10px;
+    background-color: rgb(62, 120, 167);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+}
+
+.specialist__list {
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    list-style-type: none;
+    width: 400;
+    justify-content: center
+}
+
+.specialist__card {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.specialist__link {
+    margin-top: auto;
+}
+
+.specialist__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
