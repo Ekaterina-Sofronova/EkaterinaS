@@ -58,7 +58,7 @@
 .about {
     display: flex;
     gap: 10px;
-  
+
 }
 
 .about__wrap-right {
@@ -150,4 +150,46 @@
     width: 100%;
     height: 200px;
     object-fit: cover;
+}
+
+.form {
+    flex-direction: column;
+    display: flex;
+    background-color: rgb(82, 90, 123);
+    width: 400px;
+    height: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+.form__title {
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.form__item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__button {
+    background-color: rgb(46, 50, 84);
+    border-color: rgb(24, 29, 47);
+    border-radius: 5px;
+    color: rgb(251, 249, 249);
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.form__separator {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form__link {
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    color: rgb(176, 181, 202);
 }
