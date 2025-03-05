@@ -124,7 +124,12 @@
     text-decoration: none;
     text-align: center;
 }
-
+.specialist__link:hover {
+    background-color: rgb(66, 81, 94);
+    cursor: pointer;
+    border-color: aqua;
+    transition: 0.2s;
+}
 .specialist__list {
     margin: 0;
     padding: 20px 0;
