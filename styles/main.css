@@ -124,26 +124,37 @@
     text-decoration: none;
     text-align: center;
 }
+
 .specialist__link:hover {
     background-color: rgb(66, 81, 94);
     cursor: pointer;
     border-color: aqua;
     transition: 0.2s;
 }
+
+.specialist__list-wrap {
+    display: flex;
+    align-items: center;
+}
+
+
 .specialist__list {
+    overflow: hidden;
     margin: 0;
     padding: 20px 0;
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     list-style-type: none;
     width: 400;
-    justify-content: center
+    justify-content: flex-start;
+    flex-wrap: nowrap;
 }
 
 .specialist__card {
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
 
 }
 
