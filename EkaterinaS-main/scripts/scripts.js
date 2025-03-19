@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
             else {
                 left = 0;
             }
-            if (left < 1120) {
+            if (left >= 0) {
                 left = 0;
             } else {
                 left = left + 1120;
