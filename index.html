@@ -18,7 +18,7 @@
 
         <div class="header__buttons">
             <a class="header__login" href="#">Вход</a>
-            <a class="header__login" href="#">Регистрация</a>
+           
         </div>
         <nav class="header__menu">
             <ul class="menu">
@@ -82,7 +82,7 @@
                         <li class="specialist__card">
                             <img class="specialist__image" src="images/analyst.png" alt="фото аналитика" width="300"
                                 height="200">
-                            <p class="specialist__name"> Сергеев Сергей Сергеевич</p>
+                            <p class="specialist__name"> Специалист 1</p>
                             <p class="specialist__job"> Финансовый аналитик</p>
                             <p class="specialist__desc">Предоставляет объективные аналитические материалы по рынку,
                                 помогает принять инвестиционные
@@ -92,7 +92,7 @@
                         <li class="specialist__card">
                             <img class="specialist__image" src="images/portfoliomanager.jpg"
                                 alt="фото управляющего портфелем" width="300" height="200">
-                            <p class="specialist__name">Егоров Егор Егорович</p>
+                            <p class="specialist__name">Специалист 2</p>
                             <p class="specialist__job"> Управляющий портфелем</p>
                             <p class="specialist__desc">Разрабатывает и реализует инвестиционные стратегии для
                                 клиентов,
@@ -102,7 +102,7 @@
                         <li class="specialist__card">
                             <img class="specialist__image" src="images/consultant.jpg" alt="фото консультанта"
                                 width="300" height="200">
-                            <p class="specialist__name">Антонов Антон Антонович</p>
+                            <p class="specialist__name">Специалист 3</p>
                             <p class="specialist__job"> Налоговый консультант</p>
                             <p class="specialist__desc">Предоставляет консультации по налогообложению инвестиций и
                                 помогает
@@ -112,7 +112,7 @@
                         <li class="specialist__card">
                             <img class="specialist__image" src="images/trader.jpg" alt="фото трейдера" width="300"
                                 height="200">
-                            <p class="specialist__name">Васильев Василий Васильевич</p>
+                            <p class="specialist__name">Специалист 4</p>
                             <p class="specialist__job"> Ведущий трейдер</p>
                             <p class="specialist__desc">Делится опытом и стратегиями торговли, проводит вебинары и дает
                                 рекомендации по торговым сигналам.</p>
@@ -121,7 +121,7 @@
                         <li class="specialist__card">
                             <img class="specialist__image" src="images/risks.jpg" alt="фото управляющего рисками"
                                 width="300" height="200">
-                            <p class="specialist__name">Евгеньева Евгения Евгеньевна</p>
+                            <p class="specialist__name">Специалист 5</p>
                             <p class="specialist__job"> Специалист по управлению рисками</p>
                             <p class="specialist__desc">Помогает клиентам определять и управлять рисками при торговле на
                                 рынке.</p>
@@ -130,7 +130,7 @@
                         <li class="specialist__card">
                             <img class="specialist__image" src="images/teacher.png"
                                 alt="фото специалиста по образованию" width="300" height="200">
-                            <p class="specialist__name">Александрова Александра Александрова</p>
+                            <p class="specialist__name">Специалист 6</p>
                             <p class="specialist__job"> Специалист по образованию</p>
                             <p class="specialist__desc">Предлагает обучающие материалы и проводит вебинары по трейдингу
                                 и
@@ -140,7 +140,7 @@
                         <li class="specialist__card">
                             <img class="specialist__image" src="images/developer.webp" alt="фото разработчиков"
                                 width="300" height="200">
-                            <p class="specialist__name"> Градов Александр Андреевич, Софронова Екатерина Андреевна</p>
+                            <p class="specialist__name"> Специалист 7</p>
                             <p class="specialist__job"> Разработчики платформы</p>
                             <p class="specialist__desc"> Обеспечивают бесперебойную работу платформы. Обращайтесь по
                                 любым
@@ -180,37 +180,15 @@
             <p class="footer__copyright">© 2024 Все права защищены.</p>
         </section>
     </footer>
-    <section class="section-form">
+    <section class="section-form  form-enter" hidden> 
         <form class="form" action="/submit">
             <h2 class="form__title">Вход</h2>
+            <button type="button" class="form__close">
+закрыть
+            </button>
             <input class="form__input" type="text" name="username" placeholder="Введите ваше имя">
             <input class="form__input" type="password" name="password" placeholder="Введите пароль">
             <button class="form__button">Войти</button>
-            <p class="form__separator">ИЛИ</p>
-            <a class="form__link" href="#">Регистрация</a>
-        </form>
-    </section>
-    <section class="section-form">
-        <form class="form" action="/submit" method="post">
-            <h2 class="form__title">Регистрация</h2>
-            <p class="form__desk">Введите ваши данные</p>
-            <div class="form__item">
-                <label class="form__lable">Фамилия</label>
-                <input class="form__input" type="text" name="name" placeholder="Введите фамилию" required>
-            </div>
-            <div class="form__item">
-                <label class="form__lable">Имя</label>
-                <input class="form__input" type="text" name="surname" placeholder="Введите имя" required>
-            </div>
-            <div class="form__item">
-                <label class="form__lable">Почта</label>
-                <input class="form__input" type="email" name="email" placeholder="Введите почту" required>
-            </div>
-            <div class="form__item">
-                <label class="form__lable">Номер телефона</label>
-                <input class="form__input" type="tel" name="phone" placeholder="Введите номер телефона" required>
-            </div>
-            <button class="form__button">Зарегистрироваться</button>
         </form>
     </section>
     <script src="scripts/scripts.js"></script>

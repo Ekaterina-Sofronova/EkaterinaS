@@ -76,3 +76,48 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     console.log('Скрипт отработал корректно')
 });
+
+/* Специалисты*/
+
+const specialist__list = document.querySelector(".specialist");
+if (specialist__list) {
+    const dataSpecialist__name = [
+        "Сергеев Сергей Сергеевич",
+        "Егоров Егор Егорович",
+        "Антонов Антон Антонович",
+        "Васильев Василий Васильевич",
+        "Евгеньева Евгения Евгеньевна",
+        "Александрова Александра Александрова",
+        "Градов Александр Андреевич, Софронова Екатерина Андреевна",
+    ];
+    const specialist__name =
+    specialist__list.querySelectorAll(".specialist__name");
+
+    specialist__name.forEach((item, index) => {
+        item.textContent = dataSpecialist__name[index];
+    });
+}
+
+/* ФОРМЫ */
+/* ФОРМА ВХОДА */
+const HeaderLogin = document.querySelector(".header__login");
+const FormWindow = document.querySelector(".form-enter");
+
+if (HeaderLogin && FormWindow) {
+    HeaderLogin.addEventListener("click", () => {
+        FormWindow.removeAttribute("hidden");
+    });
+}
+
+// Закрытие модального окна при клике вне его области
+window.addEventListener("click", (event) => {
+    if (event.target === FormWindow) {
+        FormWindow.setAttribute("hidden", true);
+    }
+});
+        //Закрытие модального окна при клике на кнопку закрытия
+const closeButton = document.querySelector(".form__close");
+
+closeButton.addEventListener("click", () => {
+    FormWindow.setAttribute("hidden", true);
+});
