@@ -2,3 +2,13 @@
     background-color: #bbfefe;
     color: #1f2222;
 }
+.form-enter {
+    content: "";
+    position: fixed;
+    background-color: #79819b70;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    
+}
