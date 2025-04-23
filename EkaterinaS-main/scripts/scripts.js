@@ -91,7 +91,7 @@ if (specialist__list) {
         "Градов Александр Андреевич, Софронова Екатерина Андреевна",
     ];
     const specialist__name =
-    specialist__list.querySelectorAll(".specialist__name");
+        specialist__list.querySelectorAll(".specialist__name");
 
     specialist__name.forEach((item, index) => {
         item.textContent = dataSpecialist__name[index];
@@ -115,9 +115,151 @@ window.addEventListener("click", (event) => {
         FormWindow.setAttribute("hidden", true);
     }
 });
-        //Закрытие модального окна при клике на кнопку закрытия
+//Закрытие модального окна при клике на кнопку закрытия
 const closeButton = document.querySelector(".form__close");
 
 closeButton.addEventListener("click", () => {
     FormWindow.setAttribute("hidden", true);
+});
+
+
+/* НАВИГАЦИОННОЕ МЕНЮ */
+const headerMenu = document.querySelector('.header__menu');
+if (headerMenu) {
+    const headerList = headerMenu.querySelector('.menu');
+    const menuData = {
+        link1: {
+            link: '#',
+            title: 'Информационный модуль',
+        },
+        link2: {
+            link: '#',
+            title: 'Аналитический модуль',
+        },
+        link3: {
+            link: '#',
+            title: 'Модуль управления портфелем',
+        },
+        link4: {
+            link: '#',
+            title: 'Обучающий модуль',
+        },
+        link5: {
+            link: '#',
+            title: 'Модуль общения',
+        }
+    }
+    const createLink = (UrlLink, title) => {
+        const link = `
+            <li class="header__item"><a href="${UrlLink}" class="menu__link">${title}</a></li>
+            `;
+        return link;
+    }
+    for (const linkItem in menuData) {
+        const link = menuData[linkItem];
+        const linkIndex = createLink(link.UrlLink, link.title);
+        headerList.insertAdjacentHTML('beforeend', linkIndex);
+
+    }
+    console.log('Навигационное меню создано с помощью javascript!');
+}
+
+/* Задание 6 */
+const menuContainer = document.querySelector('#menu');
+if (menuContainer) {
+    const menuList = menuContainer.querySelector('.menu');
+    const apiUrl = 'data.json';
+    const createItem = (linkUrl, title,) => {
+        const item = `
+            <li class="menu"<a class="menu__link" href="${linkUrl}">${title}</a></li>
+        `;
+
+        return item;
+    }
+
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            console.log(typeof (data));
+            data.forEach(item => {
+                const headerItem = createItem(item.link, item.title,);
+                menuList.insertAdjacentHTML('beforeend', headerItem);
+            });
+        })
+        .catch(error => {
+            console.error('Ошибка при загрузке данных:', error);
+        });
+}
+/* Предзагрузчик */
+const preloader = document.querySelector(".preloader");
+const content = document.querySelector(".content");
+if (preloader && content) {
+    setTimeout(() => {
+        // Скрываем прелоадер
+        preloader.style.opacity = "0";
+        preloader.style.visibility = "hidden";
+
+        // Показываем контент
+        content.style.display = "block";
+
+        // Удаляем элемент из DOM
+        preloader.remove();
+    }, 3000); // Задержка 3 секунды
+}
+
+/* swiper */
+const slider = document.querySelector('.swiper');
+
+if (slider) {
+    const swiper = new Swiper(slider, {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        loop: true,
+
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+}
+
+/* Отправка данных на форме входа */
+FormWindow.addEventListener('submit', event => {
+    event.preventDefault(); // Предотвращаем отправку формы
+
+    const username = FormWindow.querySelector('#username').value;
+    const password = FormWindow.querySelector('#password').value;
+
+    const errorMessage = FormWindow.querySelector('#error-message');
+
+    if (password !== confirmPassword) {
+        errorMessage.textContent = 'Пароли не совпадают';
+        errorMessage.style.color = 'red';
+        return;
+    }
+
+    if (username.length < 2) {
+        errorMessage.textContent = 'Имя пользователя должно содержать не менее 2 символов';
+        return;
+    }
+
+    if (password.length < 8) {
+        errorMessage.textContent = 'Пароль должен содержать не менее 8 символов';
+        return;
+    }
+
+    // Здесь можно добавить отправку данных на сервер
+    errorMessage.textContent = 'Вы вошли в систему!';
+    errorMessage.style.color = 'green';
+
+    // Запишем логин
+    window.localStorage.setItem("login", login);
+
+    // Очистка формы
+    document.getElementById('registration-form').reset();
 });
