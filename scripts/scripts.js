@@ -91,7 +91,7 @@ if (specialist__list) {
         "Градов Александр Андреевич, Софронова Екатерина Андреевна",
     ];
     const specialist__name =
-    specialist__list.querySelectorAll(".specialist__name");
+        specialist__list.querySelectorAll(".specialist__name");
 
     specialist__name.forEach((item, index) => {
         item.textContent = dataSpecialist__name[index];
@@ -115,9 +115,52 @@ window.addEventListener("click", (event) => {
         FormWindow.setAttribute("hidden", true);
     }
 });
-        //Закрытие модального окна при клике на кнопку закрытия
+//Закрытие модального окна при клике на кнопку закрытия
 const closeButton = document.querySelector(".form__close");
 
 closeButton.addEventListener("click", () => {
     FormWindow.setAttribute("hidden", true);
 });
+
+
+/* НАВИГАЦИОННОЕ МЕНЮ */
+const headerMenu = document.querySelector('.header__menu');
+if (headerMenu) {
+    const headerList = headerMenu.querySelector('.menu');
+    const menuData = {
+        link1: {
+            link: '#',
+            title: 'Информационный модуль',
+        },
+        link2: {
+            link: '#',
+            title: 'Аналитический модуль',
+        },
+        link3: {
+            link: '#',
+            title: 'Модуль управления портфелем',
+        },
+        link4: {
+            link: '#',
+            title: 'Обучающий модуль',
+        },
+        link5: {
+            link: '#',
+            title: 'Модуль общения',
+        }
+    }
+    const createLink = (UrlLink, title) => {
+        const link = `
+            <li class="header__item"><a href="${UrlLink}" class="menu__link">${title}</a></li>
+            `;
+        return link;
+    }
+    for (const linkItem in menuData) {
+        const link = menuData[linkItem];
+        const linkIndex = createLink(link.UrlLink, link.title);
+        headerList.insertAdjacentHTML('beforeend', linkIndex);
+
+    }
+    console.log('Навигационное меню создано с помощью javascript!');
+}
+
