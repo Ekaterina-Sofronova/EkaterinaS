@@ -191,7 +191,7 @@ if (menuContainer) {
             console.error('Ошибка при загрузке данных:', error);
         });
 }
-/* Предзагрузчик 6 */
+/* Предзагрузчик */
 const preloader = document.querySelector(".preloader");
 const content = document.querySelector(".content");
 if (preloader && content) {
@@ -208,3 +208,58 @@ if (preloader && content) {
     }, 3000); // Задержка 3 секунды
 }
 
+/* swiper */
+const slider = document.querySelector('.swiper');
+
+if (slider) {
+    const swiper = new Swiper(slider, {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        loop: true,
+
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+}
+
+/* Отправка данных на форме входа */
+FormWindow.addEventListener('submit', event => {
+    event.preventDefault(); // Предотвращаем отправку формы
+
+    const username = FormWindow.querySelector('#username').value;
+    const password = FormWindow.querySelector('#password').value;
+
+    const errorMessage = FormWindow.querySelector('#error-message');
+
+    if (password !== confirmPassword) {
+        errorMessage.textContent = 'Пароли не совпадают';
+        errorMessage.style.color = 'red';
+        return;
+    }
+
+    if (username.length < 2) {
+        errorMessage.textContent = 'Имя пользователя должно содержать не менее 2 символов';
+        return;
+    }
+
+    if (password.length < 8) {
+        errorMessage.textContent = 'Пароль должен содержать не менее 8 символов';
+        return;
+    }
+
+    // Здесь можно добавить отправку данных на сервер
+    errorMessage.textContent = 'Вы вошли в систему!';
+    errorMessage.style.color = 'green';
+
+    // Запишем логин
+    window.localStorage.setItem("login", login);
+
+    // Очистка формы
+    document.getElementById('registration-form').reset();
+});

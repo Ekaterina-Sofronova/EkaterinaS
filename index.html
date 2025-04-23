@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/normalize.css">
 </head>
@@ -73,11 +74,10 @@
                     <input class="specialist__input" type="text" id="username" name="username">
                 </div>
                 <div class="slider">
-                    <button> <img class="sliderLeft" src="images/slider left.png" alt="стрелка вправо" width="70"
-                            height="90"> </button>
-                    <div class="specialist__list-wrap">
-                        <ul class="specialist__list">
-                            <li class="specialist__card">
+
+                    <div class="specialist__list-wrap swiper">
+                        <ul class="specialist__list swiper-wrapper">
+                            <li class="specialist__card swiper-slide">
                                 <img class="specialist__image" src="images/analyst.png" alt="фото аналитика" width="300"
                                     height="200">
                                 <p class="specialist__name"> Специалист 1</p>
@@ -87,7 +87,7 @@
                                     решения, исходя из фундаментального анализа.</p>
                                 <a class="specialist__link" href="#">Записаться на консультацию</a>
                             </li>
-                            <li class="specialist__card">
+                            <li class="specialist__card swiper-slide">
                                 <img class="specialist__image" src="images/portfoliomanager.jpg"
                                     alt="фото управляющего портфелем" width="300" height="200">
                                 <p class="specialist__name">Специалист 2</p>
@@ -95,9 +95,9 @@
                                 <p class="specialist__desc">Разрабатывает и реализует инвестиционные стратегии для
                                     клиентов,
                                     обеспечивает управление рисками и максимизацию доходности.</p>
-                                <a class="specialist__link" href="#">Записаться на консультацию</a>
+                                <a class="specialist__link " href="#">Записаться на консультацию</a>
                             </li>
-                            <li class="specialist__card">
+                            <li class="specialist__card swiper-slide">
                                 <img class="specialist__image" src="images/consultant.jpg" alt="фото консультанта"
                                     width="300" height="200">
                                 <p class="specialist__name">Специалист 3</p>
@@ -107,7 +107,7 @@
                                     минимизировать налоговые издержки.</p>
                                 <a class="specialist__link" href="#">Записаться на консультацию</a>
                             </li>
-                            <li class="specialist__card">
+                            <li class="specialist__card swiper-slide">
                                 <img class="specialist__image" src="images/trader.jpg" alt="фото трейдера" width="300"
                                     height="200">
                                 <p class="specialist__name">Специалист 4</p>
@@ -117,7 +117,7 @@
                                     рекомендации по торговым сигналам.</p>
                                 <a class="specialist__link" href="#">Записаться на консультацию</a>
                             </li>
-                            <li class="specialist__card">
+                            <li class="specialist__card swiper-slide">
                                 <img class="specialist__image" src="images/risks.jpg" alt="фото управляющего рисками"
                                     width="300" height="200">
                                 <p class="specialist__name">Специалист 5</p>
@@ -127,7 +127,7 @@
                                     рынке.</p>
                                 <a class="specialist__link" href="#">Записаться на консультацию</a>
                             </li>
-                            <li class="specialist__card">
+                            <li class="specialist__card swiper-slide">
                                 <img class="specialist__image" src="images/teacher.png"
                                     alt="фото специалиста по образованию" width="300" height="200">
                                 <p class="specialist__name">Специалист 6</p>
@@ -138,7 +138,7 @@
                                     инвестированию в в эфире нашего телеграм-канала<a href="#"> @InvestSimple</a>.</p>
                                 <a class="specialist__link" href="#">Записаться на консультацию</a>
                             </li>
-                            <li class="specialist__card">
+                            <li class="specialist__card swiper-slide">
                                 <img class="specialist__image" src="images/developer.webp" alt="фото разработчиков"
                                     width="300" height="200">
                                 <p class="specialist__name"> Специалист 7</p>
@@ -149,10 +149,12 @@
                                 <a class="specialist__link" href="#">Записаться на консультацию</a>
                             </li>
                         </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
-                    <button><img class="sliderRight" src="images/slider right1.png" alt="стрелка вправо" width="70"
-                            height="90"></button>
                 </div>
+
             </section>
             <section class="schedule">
                 <h2 class="schedule__title"> График индексов в режиме реального времени </h2>
@@ -194,7 +196,7 @@
             </form>
         </section>
     </div>
-    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="scripts/scripts.js"></script>
 </body>
 
