@@ -164,3 +164,47 @@ if (headerMenu) {
     console.log('Навигационное меню создано с помощью javascript!');
 }
 
+/* Задание 6 */
+const menuContainer = document.querySelector('#menu');
+if (menuContainer) {
+    const menuList = menuContainer.querySelector('.menu');
+    const apiUrl = 'data.json';
+    const createItem = (linkUrl, title,) => {
+        const item = `
+            <li class="menu"<a class="menu__link" href="${linkUrl}">${title}</a></li>
+        `;
+
+        return item;
+    }
+
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            console.log(typeof (data));
+            data.forEach(item => {
+                const headerItem = createItem(item.link, item.title,);
+                menuList.insertAdjacentHTML('beforeend', headerItem);
+            });
+        })
+        .catch(error => {
+            console.error('Ошибка при загрузке данных:', error);
+        });
+}
+/* Предзагрузчик 6 */
+const preloader = document.querySelector(".preloader");
+const content = document.querySelector(".content");
+if (preloader && content) {
+    setTimeout(() => {
+        // Скрываем прелоадер
+        preloader.style.opacity = "0";
+        preloader.style.visibility = "hidden";
+
+        // Показываем контент
+        content.style.display = "block";
+
+        // Удаляем элемент из DOM
+        preloader.remove();
+    }, 3000); // Задержка 3 секунды
+}
+
